@@ -13,7 +13,7 @@ const url = Deno.env.get("MONGO_URL");
 if (!url) {
   console.error("Sin conexion");
   //Deno.exit(1);
-  throw new Error("Error sin conexion");
+  throw new Error("No encuentra URL");
 }
 
 const client = new MongoClient(url);
