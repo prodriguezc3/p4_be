@@ -12,7 +12,8 @@ const url = Deno.env.get("MONGO_URL");
 
 if (!url) {
   console.error("Sin conexion");
-  Deno.exit(1);
+  //Deno.exit(1);
+  throw new Error("Error sin conexion");
 }
 
 const client = new MongoClient(url);
