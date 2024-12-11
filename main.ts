@@ -12,7 +12,7 @@ import {
 const url ="mongodb+srv://prodriguezc:123456A@cluster0.pwbwl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 if (!url) {
   console.error("Sin conexion");
-  Deno.exit(1);
+  //Deno.exit(1);
   throw new Error("No encuentra URL");
 }
 
