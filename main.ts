@@ -10,11 +10,11 @@ import {
 
 //const url = Deno.env.get("MONGO_URL");
 const url ="mongodb+srv://paularodriguezcubasextra:123456A@cluster0.la0kd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-if (!url) {
+/*if (!url) {
   console.error("Sin conexion");
   //Deno.exit(1);
   throw new Error("No encuentra URL");
-}
+}*/
 
 const client = new MongoClient(url);
 await client.connect();
